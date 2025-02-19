@@ -221,7 +221,7 @@ header {
     }
 
     .category-pisos {
-        background-image: linear-gradient(#00000080, #c2c2c280), url('./img/categorias/pisos.jpg');
+        background-image: linear-gradient(#00000080, #c2c2c280), url('/img/categorias/pisos.jpg');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -234,7 +234,7 @@ header {
     }
 
     .category-paredes {
-        background-image: linear-gradient(#00000080, #c2c2c280), url('./img/categorias/paredes4\ \(1\).jpg');
+        background-image: linear-gradient(#00000080, #c2c2c280), url('/img/categorias/paredes4.jpg');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -247,7 +247,7 @@ header {
     }
 
     .category-fachadas {
-        background-image: linear-gradient(#00000080, #c2c2c280), url('./img/categorias/fachadas2.jpg');
+        background-image: linear-gradient(#00000080, #c2c2c280), url('/img/categorias/fachadas2.jpg');
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
