@@ -125,6 +125,24 @@ header {
     opacity: 1;
 }
 
+    /*---BOTÓN WHATSAPP---*/
+#btn-whatsapp {
+    position: fixed;
+    color: var(--sl-color-gray-0);
+    background-color: #25d366;
+    width: 5rem;
+    height: 5rem;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 3.8rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px var(--sl-color-gray-6);
+}
+
+
     /*---PORTADA---*/
     .container-all {
         background-color: var(--sl-color-gray-0);
