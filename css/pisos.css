@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --sl-color-gray-0: #fff;
+    --sl-color-gray-1: #f5f5f5;
+    --sl-color-gray-2: #ebebeb;
+    --sl-color-gray-3: #e0e0e0;
+    --sl-color-gray-4: #d6d6d6;
+    --sl-color-gray-5: #c2c2c2;
+    --sl-color-gray-6: #adadad;
+    --sl-color-gray-7: #999;
+    --sl-color-gray-8: #858585;
+    --sl-color-gray-9: #707070;
+    --sl-color-gray-10: #5c5c5c;
+    --sl-color-gray-11: #3d3d3d;
+    --sl-color-gray-12: #1f1f1f;
+    --sl-color-gray-13: #000;
+    --sl-color-red-1: #fdf6f5;
+    --sl-color-red-2: #ffedea;
+    --sl-color-red-3: #ffdfd9;
+    --sl-color-red-4: #ffd0c7;
+    --sl-color-red-5: #ffbbad;
+    --sl-color-red-6: #ff9e8b;
+    --sl-color-red-7: #ff7f68;
+    --sl-color-red-8: #f95d47;
+    --sl-color-red-9: #ec3727;
+    --sl-color-red-10: #d31a15;
+    --sl-color-red-11: #b40202;
+    --sl-color-red-12: #940303;
+    --sl-color-red-13: #720000;
+    --sl-color-orange-1: #fdf5e9;
+    --sl-color-orange-2: #ffedcd;
+    --sl-color-orange-3: #ffe0ae;
+    --sl-color-orange-4: #fed392;
+    --sl-color-orange-5: #febc64;
+
+    --lila: rgb(233, 96, 255);
+
+    --color-addi-primary-active: rgb(60, 106, 240);
+    --color-addi-primary-hover: rgb(10, 57, 196);
+    --color-addi-primary-inactive: rgb(204, 221, 255);
+    --color-addi-feedback-success: rgb(0, 190, 122);
+    --color-addi-feedback-warning: #efc800;
+    --color-addi-feedback-error: rgb(250, 77, 75);
+    --color-addi-feedback-info: rgb(133, 169, 255);
+    --color-addi-font-primary: rgb(24, 24, 31);
+    --color-addi-font-secondary: rgb(77, 82, 92);
+    --color-addi-font-strong: rgb(116, 119, 122);
+    --color-addi-font-hint: rgb(201, 205, 209);
+    --color-addi-font-disable: rgb(235, 236, 237);
+    --color-addi-font-over-dark: rgb(255, 255, 255);
+    --color-addi-font-action: rgb(60, 106, 240);
+    --color-addi-font-success: rgb(1, 128, 82);
+    --color-addi-font-error: rgb(204, 31, 31);
+    --color-addi-background-white: rgb(255, 255, 255);
+    --color-addi-background-soft: rgb(250, 250, 250);
+    --color-addi-background-medium: rgb(235, 236, 237);
+    --color-addi-background-hint: rgb(201, 205, 209);
+    --color-addi-background-strong: rgb(116, 119, 122);
+    --color-addi-comp-one-lighten4: rgb(250, 229, 255);
+    --color-addi-comp-one-lighten3: rgb(247, 214, 255);
+    --color-addi-comp-one-lighten2: rgb(236, 193, 247);
+    --color-addi-comp-one-lighten1: rgb(221, 169, 235);
+    --color-addi-comp-one-base: rgb(195, 143, 208);
+    --color-addi-comp-one-darken1: rgb(168, 113, 189);
+    --color-addi-comp-one-darken2: rgb(139, 90, 163);
+    --color-addi-comp-one-darken3: rgb(105, 58, 132);
+    --color-addi-comp-one-darken4: rgb(70, 34, 102);
+    --color-addi-comp-one-darken5: rgb(41, 10, 76);
+    --color-addi-comp-two-lighten5: rgb(255, 253, 235);
+    --color-addi-comp-two-lighten4: rgb(255, 251, 214);
+    --color-addi-comp-two-lighten3: rgb(255, 245, 173);
+    --color-addi-comp-two-lighten2: rgb(255, 239, 138);
+    --color-addi-comp-two-lighten1: rgb(250, 223, 70);
+    --color-addi-comp-two-base: rgb(239, 200, 0);
+    --color-addi-comp-two-darken1: rgb(227, 185, 0);
+    --color-addi-comp-two-darken2: rgb(184, 141, 0);
+    --color-addi-comp-two-darken3: rgb(133, 99, 7);
+    --color-addi-comp-two-darken4: rgb(92, 63, 6);
+    --color-addi-comp-three-lighten5: rgb(235, 255, 239);
+    --color-addi-comp-three-lighten4: rgb(212, 252, 231);
+    --color-addi-comp-three-lighten3: rgb(166, 237, 199);
+    --color-addi-comp-three-lighten2: rgb(67, 224, 146);
+    --color-addi-comp-three-lighten1: rgb(0, 190, 122);
+    --color-addi-comp-three-base: rgb(1, 128, 82);
+    --color-addi-comp-three-darken1: rgb(9, 112, 75);
+    --color-addi-comp-three-darken2: rgb(11, 82, 56);
+    --color-addi-comp-three-darken3: rgb(20, 51, 40);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    background: var(--sl-color-gray-0);
+}
+
+.container-pisos {
+    width: 120rem;
+    margin: auto;
+}
+
+.container-pisos h1 {
+  color: var(--sl-color-gray-11);  
+  margin-top: 12rem;
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.card-product {
+    background-color: var(--sl-color-gray-0);
+    /*padding: 2rem 3rem;*/
+    border-radius: 0.5rem;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-product:hover {
+    border: 1px solid var(--color-addi-feedback-warning);
+}
+
+.container-img {
+    position: relative;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.container-img .discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--sl-color-red-9);
+    color: var(--sl-color-gray-0);
+    padding: 2px 1.2rem;
+    border-radius: 100%;
+    font-size: 1.8rem;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-img:hover {  
+    border-radius: 1rem;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all .4s ease;
+}
+
+.button-group span {
+    
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+    background-color: var(--color-addi-feedback-warning);
+}
+
+.button-group span:hover i {
+    color: var(--sl-color-gray-0);
+}
+
+.button-group span i {
+    font-size: 1.5rem;
+    color: var(--sl-color-gray-0);
+    cursor: pointer;
+}
+
+.card-product:hover .button-group {
+    z-index: 0;
+    right: -1rem;
+}
+
+.card-product h3 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-style: 1.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    color: var(--sl-color-gray-10);
+}
+
+.card-product .price {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--sl-color-gray-9);
+    margin-top: 2rem;
+}
+
+.card-product .price span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--sl-color-red-8);
+    margin-top: 0.5rem;
+}

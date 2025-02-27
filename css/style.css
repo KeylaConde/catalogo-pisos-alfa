@@ -35,6 +35,57 @@
     --sl-color-orange-5: #febc64;
 
     --lila: rgb(233, 96, 255);
+    
+    --color-addi-primary-active: rgb(60, 106, 240);
+    --color-addi-primary-hover: rgb(10, 57, 196);
+    --color-addi-primary-inactive: rgb(204, 221, 255);
+    --color-addi-feedback-success: rgb(0, 190, 122);
+    --color-addi-feedback-warning: rgb(239, 200, 0);
+    --color-addi-feedback-error: rgb(250, 77, 75);
+    --color-addi-feedback-info: rgb(133, 169, 255);
+    --color-addi-font-primary: rgb(24, 24, 31);
+    --color-addi-font-secondary: rgb(77, 82, 92);
+    --color-addi-font-strong: rgb(116, 119, 122);
+    --color-addi-font-hint: rgb(201, 205, 209);
+    --color-addi-font-disable: rgb(235, 236, 237);
+    --color-addi-font-over-dark: rgb(255, 255, 255);
+    --color-addi-font-action: rgb(60, 106, 240);
+    --color-addi-font-success: rgb(1, 128, 82);
+    --color-addi-font-error: rgb(204, 31, 31);
+    --color-addi-background-white: rgb(255, 255, 255);
+    --color-addi-background-soft: rgb(250, 250, 250);
+    --color-addi-background-medium: rgb(235, 236, 237);
+    --color-addi-background-hint: rgb(201, 205, 209);
+    --color-addi-background-strong: rgb(116, 119, 122);
+    --color-addi-comp-one-lighten4: rgb(250, 229, 255);
+    --color-addi-comp-one-lighten3: rgb(247, 214, 255);
+    --color-addi-comp-one-lighten2: rgb(236, 193, 247);
+    --color-addi-comp-one-lighten1: rgb(221, 169, 235);
+    --color-addi-comp-one-base: rgb(195, 143, 208);
+    --color-addi-comp-one-darken1: rgb(168, 113, 189);
+    --color-addi-comp-one-darken2: rgb(139, 90, 163);
+    --color-addi-comp-one-darken3: rgb(105, 58, 132);
+    --color-addi-comp-one-darken4: rgb(70, 34, 102);
+    --color-addi-comp-one-darken5: rgb(41, 10, 76);
+    --color-addi-comp-two-lighten5: rgb(255, 253, 235);
+    --color-addi-comp-two-lighten4: rgb(255, 251, 214);
+    --color-addi-comp-two-lighten3: rgb(255, 245, 173);
+    --color-addi-comp-two-lighten2: rgb(255, 239, 138);
+    --color-addi-comp-two-lighten1: rgb(250, 223, 70);
+    --color-addi-comp-two-base: rgb(239, 200, 0);
+    --color-addi-comp-two-darken1: rgb(227, 185, 0);
+    --color-addi-comp-two-darken2: rgb(184, 141, 0);
+    --color-addi-comp-two-darken3: rgb(133, 99, 7);
+    --color-addi-comp-two-darken4: rgb(92, 63, 6);
+    --color-addi-comp-three-lighten5: rgb(235, 255, 239);
+    --color-addi-comp-three-lighten4: rgb(212, 252, 231);
+    --color-addi-comp-three-lighten3: rgb(166, 237, 199);
+    --color-addi-comp-three-lighten2: rgb(67, 224, 146);
+    --color-addi-comp-three-lighten1: rgb(0, 190, 122);
+    --color-addi-comp-three-base: rgb(1, 128, 82);
+    --color-addi-comp-three-darken1: rgb(9, 112, 75);
+    --color-addi-comp-three-darken2: rgb(11, 82, 56);
+    --color-addi-comp-three-darken3: rgb(20, 51, 40);
 
 }
 
@@ -130,8 +181,8 @@ header {
     position: fixed;
     color: var(--sl-color-gray-0);
     background-color: #25d366;
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     bottom: 3rem;
     right: 3rem;
     display: flex;
@@ -140,10 +191,49 @@ header {
     font-size: 3.8rem;
     border-radius: 50%;
     box-shadow: 2px 2px 4px var(--sl-color-gray-6);
+    z-index: 10;
 }
 
 
     /*---PORTADA---*/
+    .container-cover .slider-box {
+        width: 100%;
+        height: auto;
+        margin: 8rem auto 0;
+        overflow: hidden;
+    }
+
+    .slider-box ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+
+    .slider-box li {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+
+    .slider-box img {
+        width: 100%;
+    }
+
+    @keyframes slide {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+
+        25% { margin-left: -100%; }
+        45% { margin-left: -100%; }
+
+        50% { margin-left: -200%; }
+        70% { margin-left: -200%; }
+
+        75% { margin-left: -300%; }
+        100% { margin-left: -300%; }
+    }
+
     .container-all {
         background-color: var(--sl-color-gray-0);
         width: 100%;
@@ -297,18 +387,21 @@ header {
     }
 
     .card-category span {
-        font-size: 1.6rem;
-        color: var(--sl-color-gray-0);
+        font-size: 1.6rem;        
         background-color: var(--sl-color-red-8);
         padding: 1rem 2rem;
         border-radius: 20px;
         cursor: pointer;
     }
 
+    .card-category span a {
+        color: var(--sl-color-gray-0);
+    }
+
     /*---FOOTER---*/
     .footer {
         background-color: var(--sl-color-gray-0);
-        width: 125rem;
+        width: 120rem;
         margin: auto;
     }
 
@@ -328,10 +421,39 @@ header {
 
     .menu-footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr) 4cqmin;
-        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
         justify-items: center;
     }
+
+
+    .container-discount {
+        width: 100%;
+        height: auto;
+        margin-right: 1rem;
+        text-align: center;
+        z-index: 1;
+        border-radius: 100%;
+    }
+
+    .container-discount h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container-discount p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .title-footer {
         font-weight: 500;
         font-size: 1.8rem;
@@ -417,4 +539,10 @@ header {
 
     .medios-de-pago img {
         margin-top: 2rem;
+    }
+
+    .copyright {
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
